@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>자기소개</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet">
+    <!--외부 스타일 적용-->
+    <link rel="stylesheet" type="text/css" href="st.css">
+
+    <!--내부 스타일 적용-->
+    <style>
+        .servey{
+            display: flex;
+            justify-content: center;
+        }
+        #survey{
+            padding: 10px;
+            margin: 10px;
+            width: 800px;
+            height: auto;
+        }
+        .box1 h2{
+            font-size: 2em;
+            line-height: 0.9em;
+        }
+        .box2{
+            height: auto;
+        }
+        fieldset{
+            margin: 15px;
+        }
+        ul{
+            list-style: none;
+        }
+        li{
+            margin: 20px;
+        }
+        li label{
+            width: 80px;
+            float: left;
+            font-size: 0.8em;
+        }
+        label img{
+            width: 15%;
+            margin-left: 9px;
+            margin-right: 40px;
+        }
+        #btn{
+            text-align: center;
+            
+        }
+        input[type=submit], input[type=reset]{
+            background-color: darkseagreen;
+            color: white;
+            width: 45%;
+            padding: 20px;
+            border-radius: 20px;
+            border: 10px;
+        }
+        fieldset{
+            padding-top: 0px;
+        }
+        fieldset ul{
+            font-size: 23px;
+        }
+        #user_name,#user_pw{
+            width: 30%;
+            height: 30px;
+        }
+
+    </style>
+    <style>
+        * {
+            font-family: "맑은 고딕";
+            margin: 0px;
+        }
+
+        header,footer,nav {
+            background-color:antiquewhite;
+            color:rgb(13, 56, 32);
+            font-weight: bolder;
+            padding: 15px;
+        }
+        header{
+            width: 100%;
+            height: 324px;
+            font-size: 25px;
+            text-align: left;
+        }
+
+        header > div {
+            float: left;
+        }
+        #dd1{
+            margin-top: 120px;
+            margin-left: 20px;
+        }
+
+        #dd1 > h1 {
+            padding-bottom: 30px;
+        }
+
+        nav {
+            background-color:aliceblue;
+            clear: both;
+            font-size: 20px;
+        }
+
+        section{
+            background-color:lemonchiffon;
+            margin: 10px;
+			padding: 10px;
+			width: 45%;
+			height: 250px;
+            float: left;
+        }
+        footer{
+            clear: both;
+        }
+
+        #s1 div {
+            text-align: center;
+        }
+        .c1{
+            margin: 0%;
+            padding: 0%;
+            background-color:white;
+            /*border-style: solid 2px dotted 5px;*/
+            /*border-left: dotted rgb(111, 111, 243) 5px;*/
+            /*border-width: 5px;*/
+            border-bottom: solid lightgrey 2px;
+            border-top: solid lightgray 2px;
+            border-right: solid lightgray 2px;
+            /*border: dotted lavender;*/
+        }
+
+        #id1{
+            border-left: dotted rgb(111, 111, 243) 5px;
+        }
+        #id2{
+            border-left: dotted rgb(236, 111, 9) 5px;
+        }
+        #id3{
+            border-left: dotted rgb(206, 39, 248) 5px;
+        }
+        #id4{
+            border-left: dotted rgb(89, 204, 79) 5px;
+        }
+  
+        section{
+            font-size: 19px;
+            color: rgb(27, 16, 94);
+            padding-bottom: 20px;
+            line-height: 50px;
+        }
+        #s1 ol{
+            list-style-type: none;
+        }
+        a:link{
+			color:lightsteelblue;
+			text-decoration: none;
+		}
+		a:hover{
+			color: palevioletred;
+			background-color: royalblue;
+		}
+		a:active{
+			background-color: lightgrey;
+		}
+
+        ol {
+            padding: 0px;
+            margin: 7px;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- 시멘틱 태그 작성. -->
+    <!-- 제목 영역 -->
+    <header>
+        <div><!--섹션 또는 컨테이너 (영역구분)-->
+            <br>
+            <img src="img/loopy.jpg" width="300">
+         </div>
+         <!-- 제목 이름 영역 -->
+         <div id="dd1">
+            <h1> LEE JAE HWA </h1>
+            <h3> jennjem003 </h3>
+            <p> 이재화 </p>
+         </div>
+        
+    </header>
+
+    <!-- 메뉴 영역 - 네비게이션 영역-->
+    <nav>
+        <a href="index.html">[개인정보]</a>&nbsp;|
+        <a href="index.html#2">[학력사항]</a>&nbsp;|
+        <a href="index.html#s3">[자격사항]</a>&nbsp;|
+        <a href="index.html#s4">[자기소개]</a>&nbsp;|
+        <a href="survey.html">[설문조사]</a>
+    </nav>
+
+    <!--설문 영역-->
+    <section id="survey">
+        <form name = "myForm" mathod="get" action="">
+            <!--제목영역-->
+            <div class="box1">
+                <h2>당신이 좋아하는 과일을 선택해 보세요.</h2>
+            </div>
+            <!--설문 입력 영역-->
+            <div class="box2">
+                <!--개인정보-->
+                <fieldset>
+                    <legend>개인정보</legend>
+                    <ul>
+                        <li>
+                            <label for="user_name">성명</label>
+                            &nbsp;&nbsp;<input type="text" name="user_name" id="user_name" placeholder="이름을 입력하세용">
+                        </li>
+                        <li>
+                            <label for="user_name">비밀번호</label>
+                            &nbsp;&nbsp;<input type="password" name="user_pw" id="user_pw" placeholder="비밀번호를 입력하세용">
+                        </li>
+                    </ul>
+                </fieldset>
+                <!--과일 선택-->
+                <fieldset>
+                    <legend>좋아하는 과일을 선택하세요.</legend>
+                    <label>
+                        <input type="radio" name="fruit" id="fruit1" value="딸기">
+                        <img src="img/img1.png">
+                    </label>
+                    <label>
+                        <input type="radio" name="fruit" id="fruit1" value="바나나">
+                        <img src="img/img2.png">
+                    </label>
+                    <label>
+                        <input type="radio" name="fruit" id="fruit1" value="수박">
+                        <img src="img/img4.png">
+                    </label>
+                    <label>
+                        <input type="radio" name="fruit" id="fruit1" value="사과">
+                        <img src="img/img3.png">
+                    </label>
+                </fieldset>
+                <div id="btn">
+                    <input type="submit" value="결과 보기">
+                    <input type="reset" value="취소>"
+                </div>
+            </div>
+        
+        </form>
+
+    </section>
+
+    <!-- 꼬리말 영역 -->
+    <footer>
+        <p>
+             &copy;jaehwa
+             <h5>&nbsp;&nbsp; AI 활용 빅데이터분석 풀스텍서비스 SW 개발자 양성과정</h5>
+        </p>
+    </footer>
+
+   
+    
+    
+    
+
+    
+
+
+    
+</body>
+</html>
